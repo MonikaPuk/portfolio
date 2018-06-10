@@ -1,0 +1,520 @@
+/* GENERAL */
+header{
+  background-color: #FBFBFB;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -8px -8px 0px -8px;
+  position: sticky;
+  top:0px;
+  z-index: 2;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.logo{
+  width: 10vw;
+  margin-left: 2vw;
+}
+i{
+  position: absolute;
+  top: 8vh;
+  right:14vw;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: #56203F;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+color: #DD2A4A;
+box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  margin-right: 30px;
+  color: #56203F;
+  text-decoration: none;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.frame{
+  display: none;
+  background-color: rgba(229, 245, 249, 0.5);
+  position: fixed;
+  top:0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+}
+.inside{
+  display: none;
+  background-color: white;
+  width: 70vw;
+  height: 90vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  overflow: auto;
+}
+/*FRONT*/
+  .front{
+    background-image: url('images/start_back_mobile.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+  }
+  .fheading{
+    font-size: 3vh;
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+    margin-left: 1vh;
+  }
+  .fbuttons{
+    display: flex;
+    flex-direction: row;
+  }
+  .fbutton{
+    border-radius: 2em;
+    padding: 1em;
+    background-color: #56203F;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+  }
+
+/*PORTFOLIO*/
+/* content */
+video{
+  width: 40%;
+  margin: 2vw;
+}
+.mockup{
+  width: 100%;
+}
+.bike_link{
+  width: 50%;
+}
+.pbody {
+  margin: 0px 40px 0px 40px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'header' 'intro' 'text1' 'girl1' 'text2' 'girl2' 'text3' 'girl3' 'text4' 'girl4';
+}
+.trees{
+  background-color: #56203F;
+  margin:0px;
+}
+.girl {
+  height: 40vh;
+}
+.girl_2 {
+  height: 60vh;
+}
+.logo{
+  width: 100px;
+  padding-left: 8px;
+}
+.h1{
+  font-size: 3vh;
+}
+.h2{
+  font-size: 2vh;
+}
+.pheading{
+  font-size: 2vh;
+}
+.intro{
+    grid-area: intro;
+    text-align: center;
+    background-color: #FFE3DC;
+    margin-bottom:3vw;
+    padding-bottom: 10vw;
+    background-image: url('images/intro_back.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32vh;
+  background-position: bottom;
+  }
+
+.girl1{
+  grid-area: girl1;
+  display: flex;
+  justify-content: flex-end;
+}
+.text1{
+  grid-area: text1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.text{
+  background-image: url('images/cloud.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  background-size: 36vh;
+  display: flex;
+  flex-direction: column;
+}
+.btn_cloud{
+  border-radius: 3em;
+  background-color: #E5F5F9;
+  border-color: #56203F;
+  padding: 6px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  transform: scale(1.5);
+}
+.girl2{
+  grid-area: girl2;
+  display: flex;
+  justify-content: flex-start;
+}
+.text2{
+  grid-area: text2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.girl3{
+  grid-area: girl3;
+  display: flex;
+  justify-content: flex-end;
+}
+.text3{
+  grid-area: text3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.girl4{
+  grid-area: girl4;
+  display: flex;
+  justify-content: flex-start;
+}
+.text4{
+  grid-area: text4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.see{
+  font-size: 1vh;
+}
+
+.bold{
+  font-size: 3vh;
+}
+.mobile{
+  width: 20vh;
+  }
+.responsive, .redesign{
+  width: 50vh;
+}
+.description {
+  width: 60vw;
+}
+.inside {
+  width: 90vw;
+  height: 90vh;
+}
+
+video {
+    width: 60%;
+  }
+
+  .bprofile{
+    background-color: #FFE3DC;
+    margin: 0px;
+  }
+
+  .about_me{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/profile_back_mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.profile_pic{
+  width: 70vw;
+}
+  .text_me{
+  background-color: rgba(127, 9, 82, 0.5);
+  color: white;
+  width: 50vw;
+  height: 50vh;
+  padding: 2em;
+  margin-right: 30px;
+  overflow: scroll;
+  font-size: 2vh;
+  }
+  .mheading{
+    font-weight: 400;
+    font-size: 3vw;
+    margin-top: 0px;
+}
+@media all and (min-width: 700px){
+  /*FRONT*/
+  .front{
+    background-image: url('images/start_back_mobile.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+  }
+  .fheading{
+    font-size: 4vh;
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+  }
+  .fbuttons{
+    display: flex;
+    flex-direction: row;
+  }
+  .fbutton{
+    border-radius: 2em;
+    padding: 1em;
+    background-color: #56203F;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+  }
+}
+.about_me{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/profile_back_mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media all and (min-width: 1000px){
+  /* FRONT PAGE */
+
+  .front{
+    background-image: url('images/start_back.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  }
+  .fheading{
+    font-size: 2vw;
+    position: absolute;
+    top: 20vh;
+    left: 3vw;
+  }
+  .fbuttons{
+    display: flex;
+    flex-direction: row;
+  }
+  .fbutton{
+    border-radius: 2em;
+    padding: 1em;
+    background-color: #56203F;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+
+  /*PORTFOLIO*/
+
+  .bold{
+    font-weight: 400;
+    font-size: 2vw;
+  }
+  .h1{
+    font-size: 3vw;
+    margin-bottom: 2px;
+  }
+  .h2{
+    font-size: 2vw;
+    margin-bottom: 0px;
+  }
+  .see{
+    font-size: 1vw;
+  }
+
+  .intro{
+    height: 35vw;
+  }
+
+  .pheading{
+    font-size: 2vw;
+  }
+
+  .pbody{
+    margin: 0px 50px 0px 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'header header'
+    'intro intro'
+    'text1 girl1'
+    'girl2 text2'
+    'text3 girl3'
+    'girl4 text4'
+    ;
+  }
+  .girl{
+    height: 70vh;
+  }
+  .girl1{
+    grid-area: girl1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .text{
+    background-image: url('images/cloud.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .girl_2{
+    height: 100vh;
+  }
+  /* FRAMES */
+
+  /*web*/
+  .description{
+    width: 30vw;
+  }
+  .frame{
+    display: none;
+    background-color: rgba(229, 245, 249, 0.5);
+    position: fixed;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+  }
+  .inside{
+    display: none;
+    background-color: white;
+    width: 70vw;
+    height: 90vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    overflow: auto;
+  }
+  .mobile{
+    width:10vw;
+  }
+  .responsive{
+    width: 40vw;
+  }
+  .redesign{
+    width: 40vw;
+  }
+
+
+  /* animation */
+
+  /* PROFILE PAGE */
+  .bprofile{
+    background-color: #FFFFFF;
+    margin: 0px;
+  }
+
+  .about_me{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/profile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .text_me{
+  background-color: rgba(127, 9, 82, 0.5);
+  color: white;
+  width: 30vw;
+  height: 50vh;
+  padding: 2em;
+  margin-right: 30px;
+  overflow: scroll;
+  }
+  .mheading{
+    font-weight: 400;
+    font-size: 3vw;
+    margin-top: 0px;
+}
+.profile_pic{
+  display: none;
+}
+
+
+}
